@@ -1,0 +1,75 @@
+.market {
+  padding-top: 20px;
+  padding-bottom: 105px;
+}
+.market__images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    background: url(../img/nft-market.svg) no-repeat center / contain;
+    width: 100%;
+    height: 94px;
+  }
+}
+
+.market__circle {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.market__laptop {
+  position: relative;
+  z-index: 1;
+}
+
+.market__text {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+
+@media(max-width: 991px) {
+  .market {
+    padding-top: 120px;
+  }
+  .market__circle {
+    top: -75px;
+  }
+  .market__images {
+    &::before {
+      top: -20px;
+    }
+  }
+  .market {
+    padding-bottom: 60px;
+  }
+}
+
+@media(max-width: 767px) {
+  .market__circle {
+    top: -75px;
+  }
+  .market__images {
+    &::before {
+      top: -35px;
+    }
+  }
+  .market__laptop {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}

@@ -1,0 +1,198 @@
+.nft {
+  --bg-gap: -78%;
+  padding-top: 200px;
+  padding-bottom: 20px;
+  background: url(../img/ellipse-bg.svg) no-repeat right var(--bg-gap) bottom;
+  margin-top: -190px;
+  @media(min-width: 1200px){
+    --bg-gap: -68%;
+  }
+  @media(min-width: 1300px){
+    --bg-gap: -38%;
+  }
+  @media(min-width: 1440px){
+    --bg-gap: -25%;
+  }
+  @media(min-width: 1880px) {
+    --bg-gap: 18%;
+  }
+}
+
+.nft__text {
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.nft__title {
+  color: #fff;
+  margin: 0;
+  text-align: right;
+  position: relative;
+  z-index: 3;
+  span {
+    margin: 0;
+  }
+}
+.nft__big {
+  font-weight: 900;
+  font-size: 92px;
+  line-height: 111px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.nft__row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nft__shirt {
+  position: relative;
+  top: -30px;
+  z-index: 2;
+  flex-shrink: 0;
+  max-height: 421px;
+}
+
+.nft__coin {
+  position: absolute;
+  left: 13%;
+  top: -42px;
+}
+
+.nft__list {
+  padding: 47px 0;
+  padding-left: 12px;
+  padding-right: 36px;
+  background: radial-gradient(105.02% 123.62% at -2.6% 13.46%, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02), inset 5px 5px 4px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(42px);
+  border-radius: 54px;
+  margin-top: 57px;
+  position: relative;
+  z-index: 3;
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.ntf-2__info {
+  flex-shrink: 0;
+  max-width: 615px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  p {
+    margin: 0;
+  }
+}
+
+.nft-2 {
+  margin-top: -105px;
+}
+
+.nft-2__image {
+  margin-left: -50px;
+}
+
+.ntf-2__row {
+  display: flex;
+  align-items: center;
+}
+
+@media(max-width: 1151px) {
+  .nft__text {
+    br {
+      display: none;
+    }
+  }
+  .exclusive-info__list {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .nft-2__image {
+    margin-left: -120px;
+  }
+}
+
+@media(max-width: 991px) {
+  .nft__shirt {
+    margin-left: 0;
+  }
+  .nft__shirt {
+    margin-left: -35px;
+    top: -10px;
+  }
+  .nft__coin {
+    top: -82px;
+  }
+  .nft__text {
+    position: relative;
+    z-index: 4;
+    margin-bottom: 20px;
+  }
+  .nft__list {
+    padding: 30px 20px;
+  }
+  .exclusive-info__list li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .nft-2 {
+    margin-top: 0;
+  }
+  .ntf-2__row {
+    flex-direction: column-reverse;
+  }
+  .nft-2__image {
+    margin-left: 0;
+    margin-bottom: 30px;
+    width: 85%;
+  }
+  .ntf-2__info {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 767px) {
+  .nft {
+    overflow: hidden;
+  }
+  .nft__row {
+    flex-direction: column;
+  }
+  .ntf__info {
+    order: -1;
+  }
+  .nft__coin {
+    position: relative;
+    margin-top: -30%;
+    width: 80%;
+  }
+  .nft__big {
+    font-size: 70px;
+    line-height: 75px;
+  }
+  .nft__list {
+    padding: 30px 15px;
+  }
+  .nft__list {
+    margin-top: 40px;
+  }
+  .nft__shirt {
+    top: 0;
+    margin-top: -20px;
+    margin-left: -15px;
+    width: 50%;
+    max-height: initial;
+  }
+  .exclusive-glass .limited-drag__img {
+    margin-left: 0;
+  }
+  .exclusive-info__list li {
+    padding-left: 30px;
+  }
+  .nft-2__image {
+    width: 95%;
+  }
+}

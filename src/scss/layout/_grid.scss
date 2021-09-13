@@ -1,0 +1,14 @@
+.container {
+	width: 100%;
+  max-width: calc(1032px + var(--gap));
+	padding-left: calc(var(--gap) / 2);
+	padding-right: calc(var(--gap) / 2);
+	margin-left: auto;
+	margin-right: auto;
+  @media(max-width: 991px) {
+    --gap: 50px;
+  }
+  @media(max-width: 575px) {
+    --gap: 30px;
+  }
+}

@@ -1,0 +1,149 @@
+.reviews {
+  padding-bottom: 46px;
+  padding-bottom: 44px;
+  background: url(../img/circle-bg.svg) no-repeat 55% 52px;
+  .swiper-container {
+    padding-bottom: 65px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 61px;
+}
+
+.review {
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+  padding-bottom: 40px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--gradient-1);
+    z-index: 1;
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+
+
+}
+.review__content {
+  position: relative;
+  z-index: 2;
+  &:after {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: -23px;
+    right: -23px;
+    bottom: -39px;
+    background: var(--lite-gray);
+    z-index: 1;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    width: 222px;
+    height: 222px;
+    background-image: url(../img/pattern-black.svg);
+    background-size: contain;
+    z-index: 0;
+    opacity: .3;
+  }
+}
+
+.review__top {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.review__img {
+  border-radius: 12px;
+  margin-right: 32px;
+  flex-shrink: 0;
+}
+
+.review__title {
+  margin: 0;
+}
+
+.review__text {
+  max-width: 230px;
+  margin-top: 16px;
+  margin-bottom: 0;
+  position: relative;
+  margin-left: 55px;
+  z-index: 2;
+  &::after {
+    content: '';
+    position: absolute;
+    left: -55px;
+    top: 0;
+    background-image: url(../img/quote.svg);
+    width: 42px;
+    height: 33px;
+  }
+}
+
+.reviews .swiper-pagination-bullet {
+  width: 14px;
+  height: 8px;
+  border-radius: 16px;
+  transition: .3s;
+  background: var(--brown);
+  opacity: 1;
+}
+
+.reviews .swiper-pagination-bullet-active {
+  background: var(--white);
+}
+
+.reviews .swiper-container-horizontal > .swiper-pagination-bullets,
+.reviews .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 16px;
+}
+
+.reviews .swiper-pagination-bullet-active {
+  width: 72px;
+}
+
+@media(max-width: 1151px) {
+  .review {
+    padding-bottom: 24px;
+  }
+  .review__content::after {
+    bottom: -23px;
+  }
+}
+
+@media (max-width: 767px) {
+  .review__text {
+    max-width: 100%;
+  }
+  .review__title {
+    br {
+      display: none;
+    }
+  }
+  .reviews__title {
+    margin-bottom: 40px;
+  }
+  .reviews {
+    padding-bottom: 34px;
+    background: url(../img/circle-bg.svg) no-repeat 50% 40px / 290px 290px;
+  }
+}

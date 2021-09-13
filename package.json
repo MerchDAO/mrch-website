@@ -1,0 +1,40 @@
+{
+  "name": "mirislamus",
+  "version": "1.0.0",
+  "description": "mirislamus - template",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp clean && gulp build",
+    "update": "npm i -g npm-check-updates && ncu -u"
+  },
+  "author": "mirislamus",
+  "license": "mirislamus",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "autoprefixer": "^10.3.1",
+    "browser-sync": "^2.27.4",
+    "css-mqpacker": "^7.0.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-rsync": "0.0.9",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.3.5",
+    "sass": "^1.37.5",
+    "sort-css-media-queries": "^2.0.3"
+  }
+}

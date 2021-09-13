@@ -1,0 +1,7 @@
+{% macro svgIcon(wh, path, iconClass) %}
+  <svg {%if(classHtml)%} class="{{iconClass}}" {% endif %}  height="{{wh}}" width="{{wh}}">
+    <image height="{{wh}}" width="{{wh}}" href="{{path}}.svg"></image>
+  </svg>
+{% endmacro %}
+
+{% macro gap(var) %}{{ (' ' + var) if var }}{% endmacro %}

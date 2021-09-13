@@ -1,0 +1,133 @@
+.subscribe {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.subscribe__image {
+  position: absolute;
+  right: -45px;
+  bottom: -25px;
+  z-index: -1;
+}
+
+.subscribe__title {
+  padding-left: 65px;
+  display: flex;
+  margin: 0;
+  font-size: 34px;
+  position: relative;
+  z-index: 1;
+}
+
+.subscribe__title-left {
+  text-align: right;
+  margin-right: 38px;
+}
+
+.subscribe__title-right {
+  b {
+    color: var(--white);
+  }
+}
+
+.subscribe__form {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.subcribe-field {
+  height: 56px;
+  margin-right: 23px;
+  max-width: 515px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--gradient-1);
+  }
+}
+
+.subcribe-field__input {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  padding-left: 21px;
+  padding-right: 21px;
+  font-size: 24px;
+  line-height: 32px;
+  font-style: italic;
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  border-radius: 12px;
+  &::placeholder {
+    color: rgba(98, 81, 75, 0.4);
+  }
+}
+
+.subscribe__mail {
+  top: -75px;
+  right: 15px;
+  position: absolute;
+}
+
+@media(max-width: 991px) {
+  .subscribe__title {
+    padding-left: 0;
+  }
+  .subscribe__mail {
+    right: -30px;
+  }
+}
+
+@media(max-width: 767px) {
+  .subscribe {
+    padding-top: 0;
+    margin-top: -20px;
+  }
+  .subscribe__form {
+    flex-direction: column;
+    .subscribe-btn {
+      margin-left: auto;
+      margin-top: 23px;
+    }
+  }
+  .subcribe-field {
+    margin-right: 0;
+  }
+  .subscribe__image {
+    object-fit: cover;
+    min-height: 180px;
+    object-position: left;
+    bottom: -23px;
+  }
+  .subscribe__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .subscribe__mail {
+    top: -100px;
+    right: -75px;
+    transform: scale(.8);
+  }
+  .subscribe__title-right b {
+    color: inherit;
+  }
+}

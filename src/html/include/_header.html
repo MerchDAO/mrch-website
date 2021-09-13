@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta content="telephone=no" name="format-detection">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="theme-color" content="{{settings.themeColor}}">
+
+	<title>{{title}}</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+	<link rel="icon" href="./img/favicon/favicon.ico">
+	<link rel="stylesheet" href="./fonts/fonts.css{{settings.version}}">
+	<link rel="stylesheet" href="./css/styles.min.css{{settings.version}}">
+	<link rel="stylesheet" href="./css/main.css{{settings.version}}">
+</head>
+<body class="page__body{{macros.gap(classBody)}}">
+	<header class="page-header{{macros.gap(classHeader)}}">
+		<div class="container">
+			<div class="page-header__row">
+				<div class="page-header__col">
+					<a class="logo" href="/">
+						<svg width="164" height="44" viewBox="0 0 164 44" fill="#fff">
+							<path class="logo__fill" fill-rule="evenodd" clip-rule="evenodd" d="M7.66607 17.6024L0 22.002L7.66607 17.6024ZM0 30.8003L7.66652 35.2003V17.6001L15.3335 21.9998L23 26.3998L30.6665 21.9998L38.333 17.6001V26.4002L30.667 30.8003L23.0004 35.2003V44L30.667 39.6L38.3335 35.1999L46 30.7999V4.39999L38.3339 8.80005L30.6679 13.2001L23.0013 17.6001L15.3353 13.2001L7.66831 8.80005V0L0.00224318 4.39999V30.7999L0 30.8003Z"/>
+							<path class="logo__name" d="M69.8249 21.1844L65.1307 16.1651H64V27.7557H67.1352V22.6043L69.6707 25.18H70.0134L72.566 22.6043V27.7557H75.7012V16.1651H74.6059L69.8249 21.1844ZM86.2374 16.1981H78.7507V27.7557H86.393V25.1302H81.8002V23.1002H85.8777V20.4747H81.8002V18.8398H86.2377L86.2374 16.1981ZM96.808 23.661C99.8412 21.6797 98.9837 16.2146 94.2724 16.1981H89.0128V27.7557H92.0795V24.3544H93.6728L95.7286 27.7557H99.155V27.3264L96.808 23.661ZM94.2724 21.6962H92.0795V18.8398C92.799 18.8398 93.5529 18.8233 94.2724 18.8398C96.0199 18.8564 95.9342 21.6962 94.2724 21.6962ZM100.286 21.9769C100.303 25.9064 103.387 27.8877 106.436 27.8712C108.989 27.8712 111.679 26.5834 112.124 23.3143H109.109C108.783 24.5526 107.738 25.18 106.436 25.18C104.62 25.1635 103.455 23.6775 103.455 21.9769C103.455 20.0616 104.637 18.7559 106.436 18.7559C107.721 18.7559 108.629 19.2843 109.057 20.4565H112.073C111.61 17.369 108.92 16.0647 106.436 16.0647C103.387 16.066 100.303 18.0473 100.286 21.9769ZM124.459 16.1981H121.324V20.3919H117.624V16.1981H114.488V27.7557H117.624V23.1161H121.325V27.7557H124.46L124.459 16.1981ZM132.049 16.1981H127.527V27.7557H132.049C139.861 27.7226 139.861 16.2312 132.049 16.1981ZM130.592 18.8894H132.049C135.868 18.8894 135.868 25.0644 132.049 25.0644H130.592V18.8894ZM147.862 27.7557H150.86V27.3264L145.446 16.0495H144.126L138.73 27.3264V27.7557H141.728L142.43 26.3027H147.159L147.862 27.7557ZM146.148 23.7601H143.441L144.778 20.7221L146.148 23.7601ZM164 21.9934C164 14.0022 151.699 14.0022 151.699 21.9934C151.699 30.0022 164 30.0022 164 21.9934ZM154.851 21.9934C154.851 17.8327 160.865 17.8327 160.865 21.9934C160.865 26.1858 154.851 26.1858 154.851 21.9934Z" fill="#F9738B"/>
+							<defs>
+							<linearGradient id="paint0_linear" x1="0" y1="0" x2="59.3949" y2="38.4396" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#F96D8C"/>
+							<stop offset="1" stop-color="#FBD862"/>
+							</linearGradient>
+							</defs>
+						</svg>
+					</a>
+					<nav class="navigation NavigationList" id="navigation">
+						<button class="btn-icon navigation__close page-header__btn btn-reset HamburgerButton" type="button" aria-controls="navigation" aria-expanded="false">
+							{{ macros.svgIcon(15, './img/close') }}
+						</button>
+						<ul class="list-reset navigation__list">
+							<li>
+								<a href="https://merchdao.medium.com/" target="_blank">
+									Blog
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="page-header__col">
+					<div class="page-header__btns">
+						<button class="hamburger btn-icon page-header__btn btn-reset HamburgerButton" type="button">
+							{{ macros.svgIcon(24, './img/hamburger') }}
+						</button>
+						<div class="tooltip tooltip--left">
+							<button class="btn-icon tooltipBtn page-header__btn btn-icon--gradient btn-reset" type="button">
+								{{ macros.svgIcon(20, './img/rocket-fill') }}
+								<span class="gradient-text">Launch DAO</span>
+							</button>
+							<div class="tooltip__box" role="tooltip">
+								<p>
+									Governance platform is under development. We’re planning launching during September-October 2021
+								</p>
+								<img src="./img/tooltip-icons.svg" alt="icons">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
